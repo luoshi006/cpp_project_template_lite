@@ -1,0 +1,35 @@
+build/*
+build_*/
+*.orig
+.vagrant
+.vscode
+.cache
+
+# Qt
+*.autosave
+*creator.user*
+CMakeLists.txt.user*
+
+# CLion ignores
+.idea
+cmake-build-*/
+
+# coverage
+*.gcov
+.coverage
+.coverage.*
+
+# cmake in tree (ninja)
+.ninja_deps
+.ninja_log
+bin/
+build.ninja
+cmake_install.cmake
+CMakeCache.txt
+CMakeFiles
+compile_commands.json
+CPackConfig.cmake
+CPackSourceConfig.cmake
+CTestTestfile.cmake
+external/
+rules.ninja

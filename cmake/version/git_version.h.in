@@ -1,0 +1,42 @@
+#pragma once
+
+namespace git_version {
+const char *GIT_TAG="@GIT_TAG@";
+const char *GIT_COMMIT="@GIT_COMMIT@@GIT_DIFF@";
+const char *GIT_BRANCH="@GIT_BRANCH@";
+const char *GIT_DATE="@GIT_DATE@";
+const char *BUILD_TIME="@BUILD_TIME@";
+const char *BUILD_HOSTNAME="@BUILD_HOSTNAME@";
+
+__attribute__((unused)) static const char *get_git_version(void)
+{
+    return GIT_TAG;
+}
+
+__attribute__((unused)) static const char *get_git_commit(void)
+{
+    return GIT_COMMIT;
+}
+
+__attribute__((unused)) static const char *get_git_branch(void)
+{
+    return GIT_BRANCH;
+}
+
+__attribute__((unused)) static const char *get_git_date(void)
+{
+    return GIT_DATE;
+}
+
+__attribute__((unused)) static const char *get_build_time(void)
+{
+    return BUILD_TIME;
+}
+
+__attribute__((unused)) static const char *get_build_hostname(void)
+{
+    return BUILD_HOSTNAME;
+}
+}
+
+
